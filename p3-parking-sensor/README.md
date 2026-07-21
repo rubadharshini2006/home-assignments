@@ -101,3 +101,7 @@ Five readings are averaged to reduce measurement noise.
 - Serial Monitor displays distance and zone
 - LEDs indicate warning level
 - Buzzer frequency increases as object approaches
+
+## Demo Video
+
+https://drive.google.com/file/d/1N9ede1irJJcmi-1vH39ncnD_gDzynx8Y/view?usp=sharing
