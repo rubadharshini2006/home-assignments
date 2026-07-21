@@ -142,9 +142,11 @@ home-assignments/
         └── demo.jpg
 ```
 
-## Demo
+## Demo video link 
 
 This project demonstrates Bluetooth-based wireless control of two home lights using an ESP32. Lights can be controlled from an Android phone or manually using push buttons. The system provides visual and audible feedback and includes an automatic timeout feature for energy saving.
+
+link:https://drive.google.com/file/d/1pnT5912fe1b46I4t6YtNVuOTp4Zbrokb/view?usp=sharing
 
 ## Author
 
