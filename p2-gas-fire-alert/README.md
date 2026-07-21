@@ -158,5 +158,5 @@ Arjun College of Technology
 This project was developed for **IIT Jammu Summer School 2026 – Home Assignment** for educational purposes.
 
 ## Demo Video
-
-https://drive.google.com/file/d/1pnT5912fe1b46I4t6YtNVuOTp4Zbrokb/view?usp=sharing
+[
+https://drive.google.com/file/d/1sA8XWHVbynvHaasb9Z5hassLgZA3KZQ2/view?usp=sharing
