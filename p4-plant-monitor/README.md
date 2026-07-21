@@ -145,3 +145,7 @@ Humidity: 60%
 Status: OPTIMAL
 
 Pump: OFF
+
+## Demo Video
+
+https://drive.google.com/file/d/1_xC1Cfw3tYt4cnggr2VIdj-pulbriuYg/view?usp=sharing
