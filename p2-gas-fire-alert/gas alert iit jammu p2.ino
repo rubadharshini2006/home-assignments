@@ -14,8 +14,6 @@
    Buzzer     -> D9
 ********************************************************/
 
-//-------------------- Pin Map --------------------
-
 const int PIN_GAS_SENSOR   = A0;
 const int PIN_FLAME_DIGITAL = 7;
 
@@ -23,8 +21,6 @@ const int PIN_LED_GREEN  = 10;
 const int PIN_LED_YELLOW = 11;
 const int PIN_LED_RED    = 12;
 const int PIN_BUZZER     = 9;
-
-//-------------------- Alert Levels --------------------
 
 enum AlertLevel
 {
@@ -35,13 +31,9 @@ enum AlertLevel
   LEVEL_GAS_AND_FLAME
 };
 
-//-------------------- Timing State --------------------
-
 unsigned long beepToggleAt = 0;
 unsigned long lastPrintAt  = 0;
 bool buzzerOn = false;
-
-//-------------------- Setup --------------------
 
 void setup()
 {
@@ -69,8 +61,6 @@ void setup()
   Serial.println("MQ-2 Ready!");
 }
 
-//-------------------- Main Loop --------------------
-
 void loop()
 {
   int gasPercent = readGasPercent();
@@ -81,8 +71,6 @@ void loop()
   driveOutputs(level);
   printStatusEvery1Sec(gasPercent, flameSeen, level);
 }
-
-//-------------------- Sensor Reading --------------------
 
 int readGasPercent()
 {
@@ -95,8 +83,6 @@ bool isFlameDetected()
   // Flame sensor pulls the line LOW when flame is present
   return digitalRead(PIN_FLAME_DIGITAL) == LOW;
 }
-
-//-------------------- Decision Logic --------------------
 
 AlertLevel evaluateAlertLevel(int gasPercent, bool flameSeen)
 {
@@ -127,8 +113,6 @@ const char* alertLevelName(AlertLevel level)
   }
   return "SAFE";
 }
-
-//-------------------- Output Control --------------------
 
 void driveOutputs(AlertLevel level)
 {
@@ -180,8 +164,6 @@ void pulseBuzzer(unsigned long intervalMs)
     digitalWrite(PIN_BUZZER, buzzerOn);
   }
 }
-
-//-------------------- Serial Reporting --------------------
 
 void printStatusEvery1Sec(int gasPercent, bool flameSeen, AlertLevel level)
 {
